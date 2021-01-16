@@ -1,0 +1,47 @@
+/*
+    Flaticon icon font: Flaticon
+    Creation date: 26/06/2018 17:19
+    */
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.78ac887ffc69.eot");
+  src: url("./Flaticon.78ac887ffc69.eot?#iefix") format("embedded-opentype"), url("./Flaticon.4eb0166139df.woff") format("woff"), url("./Flaticon.573ad01bee73.ttf") format("truetype"), url("./Flaticon.4dfec78723f3.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.4dfec78723f3.svg#Flaticon") format("svg");
+  }
+}
+
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.flaticon-skyline:before {
+  content: "\f100";
+}
+
+.flaticon-sketch:before {
+  content: "\f101";
+}
+
+.flaticon-city:before {
+  content: "\f102";
+}
+
+/*# sourceMappingURL=_flaticon.css.map */
