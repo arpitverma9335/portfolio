@@ -2,13 +2,15 @@ from django.shortcuts import render
 from .models import blog
 from .models import project
 from .models import achievement
+from .models import skill
 
 # Create your views here.
 def index_func(request):
 	return render(request , 'index.html')
 
 def about(request):
-	return render(request , 'about-us.html')
+	skills = skill.objects.all().order_by('-percent')
+	return render(request , 'about-us.html' , {'skills':skills})
 
 def services(request):
 	return render(request , 'services.html')

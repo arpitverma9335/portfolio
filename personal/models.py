@@ -16,3 +16,7 @@ class achievement(models.Model):
 	field = models.CharField(max_length = 50 , default = None)
 	platform = models.CharField(max_length = 50 , default = None)
 	descn = models.TextField(default = None)
+
+class skill(models.Model):
+	area = models.CharField(max_length = 40)
+	percent = models.IntegerField(default = 0)
