@@ -20,3 +20,6 @@ class achievement(models.Model):
 class skill(models.Model):
 	area = models.CharField(max_length = 40)
 	percent = models.IntegerField(default = 0)
+
+class user_ip(models.Model):
+	ip = models.GenericIPAddressField()
