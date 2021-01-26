@@ -14,7 +14,7 @@ def index_func(request):
 		ip = request.META.get('REMOTE_ADDR')
 	u = user_ip(ip = ip)
 	if len(user_ip.objects.filter(ip = ip).values()) > 0:
-		print('already_exists')
+		pass
 	else:
 		u.save()
 	return render(request , 'index.html')

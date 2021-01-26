@@ -22,4 +22,5 @@ class skill(models.Model):
 	percent = models.IntegerField(default = 0)
 
 class user_ip(models.Model):
-	ip = models.GenericIPAddressField()
+	ip = models.GenericIPAddressField(default = None)
+	time = models.DateTimeField(auto_now=True)
