@@ -12,7 +12,7 @@
         <link rel="icon" href="{% static 'img/icon.png' %}" type="image/png">
         <title>Contact</title>
         <!-- Bootstrap CSS -->
-        {% compress css %}
+        {% compress css inline %}
         <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
         <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
         <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
@@ -104,7 +104,7 @@
             <marquee>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></marquee>
         </footer>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        {% compress js %}
+        {% compress js inline %}
         <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
         <script src="{% static 'js/popper.js' %}"></script>
         <script src="{% static 'js/bootstrap.min.js' %}"></script>

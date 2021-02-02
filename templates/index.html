@@ -12,7 +12,7 @@
         <link rel="icon" href="{% static 'img/icon.png' %}" type="image/png">
         <title>MeetMe Personally</title>
         <!-- Bootstrap CSS -->
-        {% compress css %}
+        {% compress css inline %}
         <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
         <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
         <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
@@ -99,7 +99,7 @@
         <!--================Welcome Area =================-->
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        {% compress js %}
+        {% compress js inline %}
         <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
         <script src="{% static 'js/popper.js' %}"></script>
         <script src="{% static 'js/bootstrap.min.js' %}"></script>
