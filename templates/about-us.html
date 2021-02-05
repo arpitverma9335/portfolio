@@ -80,16 +80,18 @@
         <section class="welcome_area p_120">
         	<div class="container">
         		<div class="row welcome_inner">
+                    {% for aimabout in aim_about %}
         			<div class="col-lg-12">
         				<div class="welcome_text" id="about-start">
         					<h4>About Myself</h4>
-        					<p>Hello! I'm Arpit, a web developer(django framework), a tech enthusiast, and a guy slighty obsessed for code quality. I’m currently studying mechanical engineering in NIT patna. If you have a project that you want to get started or think you need my help with something, then get in touch.</p>
+        					<p>{{aimabout.myself}}</p>
         				</div>
                         <div class="welcome_text">
                             <h4>My Aim</h4>
-                            <p>My aim is to be a successful Entrepreneur, by serving something to the society to meet its necessities and hence, upgrade its lifestyle.</p>
+                            <p>{{aimabout.aim}}</p>
                         </div>
         			</div>
+                    {% endfor %}
         			<div class="col-lg-6">
         				<div class="tools_expert">
         					<div class="skill_main">

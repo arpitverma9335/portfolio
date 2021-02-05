@@ -73,23 +73,24 @@
         <!--================End Home Banner Area =================-->
         
         <!--================Contact Area =================-->
+        {% for con in contacts %}
         <section class="contact_area p_120">
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="contact_info" id="contact-direct">
                             <div class="info_item">
                                 <i class="lnr lnr-home"></i>
-                                <h6>Bihar, India</h6>
-                                <p>Ashok Rajpath, Patna</p>
+                                <h6>{{con.add_line1}}</h6>
+                                <p>{{con.add_line2}}</p>
                             </div>
                             <div class="info_item">
                                 <i class="lnr lnr-phone-handset"></i>
-                                <h6><a href="#">+91 7985018678</a></h6>
+                                <h6><a href="#">+91 {{con.number}}</a></h6>
                                 <p>Available 24X7</p>
                             </div>
                             <div class="info_item">
                                 <i class="lnr lnr-envelope"></i>
-                                <h6><p><a href="mailto:asme.arpitverma19@gmail.com">Mail Me</a></p></h6>
+                                <h6><p><a href="mailto:{{con.email}}">Mail Me</a></p></h6>
                                 <p>Connect anytime!</p>
                             </div>
                         </div>
@@ -97,6 +98,7 @@
                 </div>
             </div>
         </section>
+        {% endfor %}
         <!--================Contact Area =================-->
         
         <!--================Footer Area =================-->
