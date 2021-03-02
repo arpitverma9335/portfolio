@@ -15,7 +15,6 @@ class project(models.Model):
 class achievement(models.Model):
 	field = models.CharField(max_length = 50 , default = None)
 	platform = models.CharField(max_length = 50 , default = None)
-	link_plat = models.CharField(max_length = 50 , default = 'None')
 	descn = models.TextField(default = None)
 
 class skill(models.Model):

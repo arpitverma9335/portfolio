@@ -98,11 +98,6 @@
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <h2>{{ach.field}}</h2>
                         <p style="color:blue">{{ach.platform}}</p>
-                        {% if ach.link_plat != 'None' %}
-                        <p><a href="{{ach.link_plat}}" target="_blank">{{ach.link_plat}}</a></p>
-                        {% else %}
-                        <p>{{ach.link_plat}}</p>
-                        {% endif %}
                         <blockquote>{{ach.descn}}</blockquote>
                     </div>
                     {% endfor %}
