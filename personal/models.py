@@ -7,23 +7,38 @@ class blog(models.Model):
 	title = models.TextField()
 	content = models.TextField(default=None)
 
+	def __str__(self):
+		return self.title
+
 class project(models.Model):
 	about = models.CharField(max_length = 100)
 	link = models.URLField(max_length = 100)
 	desc = models.TextField(default = None)
+
+	def __str__(self):
+		return self.about
 
 class achievement(models.Model):
 	field = models.CharField(max_length = 50 , default = None)
 	platform = models.CharField(max_length = 50 , default = None)
 	descn = models.TextField(default = None)
 
+	def __str__(self):
+		return self.platform
+
 class skill(models.Model):
 	area = models.CharField(max_length = 40)
 	percent = models.IntegerField(default = 0)
 
+	def __str__(self):
+		return self.area
+
 class user_ip(models.Model):
 	ip = models.GenericIPAddressField(default = None)
 	time = models.DateTimeField(auto_now=True)
+
+	def __str__(self):
+		return f"{self.time.date()} {self.ip}"
 
 class contact(models.Model):
 	add_line1 = models.CharField(max_length = 150 , default = None)
