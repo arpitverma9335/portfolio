@@ -19,6 +19,7 @@ class project(models.Model):
 		return self.about
 
 class achievement(models.Model):
+	auth_url = models.CharField(max_length = 100 , default = 'None')
 	field = models.CharField(max_length = 50 , default = None)
 	platform = models.CharField(max_length = 50 , default = None)
 	descn = models.TextField(default = None)
