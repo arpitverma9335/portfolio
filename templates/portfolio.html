@@ -90,7 +90,7 @@
                     {% for pr in projects %}
         			<div class="col-lg-4 col-md-4 col-sm-6">
                         <h2>{{pr.about}}</h2>
-                        <p><a href="{{pr.link}}" target="_blank">{{pr.link}}</a></p>
+                        <p>&#9755 <a href="{{pr.link}}" target="_blank">{{pr.link}}</a></p>
                         <blockquote>{{pr.desc}}</blockquote>
         			</div>
                     {% endfor %}
@@ -107,6 +107,11 @@
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <h2>{{ach.field}}</h2>
                         <p style="color:blue">{{ach.platform}}</p>
+                        {% ifequal ach.auth_url 'None' %}
+                        <p>Not Available</h3>
+                        {% else %}
+                        <p>&#9755 <a href="{{ach.auth_url}}" target="_blank">{{ach.auth_url}}</a></p>
+                        {% endifequal %}
                         <blockquote>{{ach.descn}}</blockquote>
                     </div>
                     {% endfor %}
