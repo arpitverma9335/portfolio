@@ -111,12 +111,12 @@
                             <h2>{{ach.field}}</h2>
                             <p style="color:blue">{{ach.platform}}</p>
                             {% ifequal ach.auth_url 'None' %}
-                            <p>Not Available</h3>
+                            <p>Not Available</p>
                             {% else %}
                             <p>&#9755 <a href="{{ach.auth_url}}" target="_blank">{{ach.auth_url}}</a></p>
                             {% endifequal %}
                             <blockquote>{{ach.descn}}</blockquote>
-                        </p>
+                        </div>>
                     </div>
                     {% endfor %}
                 </div>
