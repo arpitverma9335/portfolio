@@ -90,8 +90,8 @@
                     {% for pr in projects %}
         			<div class="col-lg-4 col-md-4 col-sm-6">
                         <div style="word-wrap: break-word">
-                            <h2>{{pr.about}}</h2>
-                            <p>&#9755 <a href="{{pr.link}}" target="_blank">{{pr.link}}</a></p>
+                            <h2>&#9755&nbsp{{pr.about}}</h2>
+                            <p>&#128279&nbsp<a href="{{pr.link}}" target="_blank">{{pr.link}}</a></p>
                             <blockquote>{{pr.desc}}</blockquote>
                         </div>
         			</div>
@@ -108,12 +108,12 @@
                     {% for ach in achievements %}
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div style="word-wrap: break-word">
-                            <h2>{{ach.field}}</h2>
+                            <h2>&#9755&nbsp{{ach.field}}</h2>
                             <p style="color:blue">{{ach.platform}}</p>
                             {% ifequal ach.auth_url 'None' %}
                             <p>Not Available</p>
                             {% else %}
-                            <p>&#9755 <a href="{{ach.auth_url}}" target="_blank">{{ach.auth_url}}</a></p>
+                            <p>&#128279&nbsp<a href="{{ach.auth_url}}" target="_blank">{{ach.auth_url}}</a></p>
                             {% endifequal %}
                             <blockquote>{{ach.descn}}</blockquote>
                         </div>
