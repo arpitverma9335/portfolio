@@ -9,6 +9,7 @@
         <meta name="author" content="Arpit Verma">
         <meta name="keywords" content="about arpit,about arpitnitp,about arpit verma,about nit arpit,about verma arpit">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="{% static 'img/icon.ico' %}" type="image/x-icon">
         <link rel="icon" href="{% static 'img/icon.png' %}" style="border-radius: 50%" type="image/png">
         <title>About Me</title>
         <!-- Bootstrap CSS -->
@@ -110,7 +111,7 @@
         					<div class="skill_main">
                                 {% for sk in skills %}
 								<div class="skill_item">
-									<h4>{{sk.area}}</h4><!--&#8594<span class="counter">{{sk.percent}}</span>%</h4>-->
+									<h4>{{sk.area}}</h4>&#8594<span class="counter">{{sk.percent}}</span>%</h4>
 									<div class="progress_br">
 										<div class="progress">
 											<div class="progress-bar" role="progressbar" aria-valuenow="{{sk.percent}}" aria-valuemin="0" aria-valuemax="100"></div>
