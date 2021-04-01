@@ -61,9 +61,7 @@
             	</nav>
             </div>
         </header>
-        <!--================Header Menu Area =================-->
-        
-        <!--================Home Banner Area =================-->
+
         <section class="banner_area">
             <div class="box_1620">
 				<div class="banner_inner d-flex align-items-center">
@@ -80,13 +78,11 @@
 				</div>
             </div>
         </section>
-        <!--================End Home Banner Area =================-->
-        
-        <!--================Contact Area =================-->
+
         {% for con in contacts %}
-        <section class="contact_area p_120">
+        <section class="contact_area p_120" style="padding-left:5px">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-6 md-12">
                         <div class="contact_info" id="contact-direct">
                             <div class="info_item">
                                 <i class="lnr lnr-home"></i>
@@ -94,7 +90,7 @@
                                 <p>{{con.add_line2}}</p>
                             </div>
                             <div class="info_item">
-                                <i class="lnr lnr-phone-handset"></i>
+                                <i style="font-size:20px" class="fa">&#xf232;</i>
                                 <h6><a href="#">+91 {{con.number}}</a></h6>
                                 <p>Available 24X7</p>
                             </div>
@@ -109,13 +105,11 @@
             </div>
         </section>
         {% endfor %}
-        <!--================Contact Area =================-->
-        
-        <!--================Footer Area =================-->
+
         <footer class="footer_area p_30">
             <marquee>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></marquee>
         </footer>
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
         {% compress js inline %}
         <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
         <script src="{% static 'js/popper.js' %}"></script>
