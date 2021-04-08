@@ -32,7 +32,7 @@ def services(request):
 def portfolio(request):
 	proj = project.objects.all()
 	ach = achievement.objects.all()
-	return render(request , 'newportfolio.html',{'projects':proj , 'achievements':ach})
+	return render(request , 'portfolio.html',{'projects':proj , 'achievements':ach})
 
 def more(request):
 	blog_id = request.GET['blogID']
