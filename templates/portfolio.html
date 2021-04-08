@@ -35,7 +35,6 @@
 
             gtag('config', 'UA-191535811-2');
         </script>
-        <style>.trans {transition: width 2s, height 2s, transform 1s;word-wrap: break-word;}.trans:hover {transform: rotate(360deg);background: rgba(150 ,150 , 0 ,0.5);word-wrap: break-word;padding:10px;}</style>
     </head>
     <body style="font-weight: 400 ">
         
@@ -91,7 +90,7 @@
         		<div class="gallery_f_inner row imageGallery1" id="project">
                     {% for pr in projects %}
         			<div class="col-lg-4 col-md-4 col-sm-6">
-                        <div class="trans hover">
+                        <div style="word-wrap: break-word">
                             <h2>&#9755&nbsp{{pr.about}}</h2>
                             <p>&#128279&nbsp<a href="{{pr.link}}" target="_blank">{{pr.link}}</a></p>
                             <blockquote>{{pr.desc}}</blockquote>
@@ -109,7 +108,7 @@
                 <div class="gallery_f_inner row imageGallery1" id="achieve">
                     {% for ach in achievements %}
                     <div class="col-lg-4 col-md-4 col-sm-6">
-                        <div class="trans hover">
+                        <div style="word-wrap: break-word">
                             <h2>&#9755&nbsp{{ach.field}}</h2>
                             <p style="color:blue">{{ach.platform}}</p>
                             {% ifequal ach.auth_url 'None' %}
