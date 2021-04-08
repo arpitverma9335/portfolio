@@ -26,7 +26,31 @@
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
         {% endcompress %}
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <style>
+            word-wrap: @-webkit-keyframes scale {
+              0%   { transform: scale(0.5,0.5); }
+              100% { transform: scale(1,1); }
+            }
+            @-moz-keyframes scale {
+              0%   { transform: scale(0.5,0.5); }
+              100% { transform: scale(1,1); }
+            }
+            @-o-keyframes scale {
+              0%   { transform: scale(0.5,0.5); }
+              100% { transform: scale(1,1); }
+            }
+            @keyframes scale {
+              0%   { transform: scale(0.5,0.5); }
+              100% { transform: scale(1,1); }
+            }
+
+            .page {
+             word-wrap: break-word;
+             animation-name: scale;
+             animation-duration: 6s; 
+             animation-fill-mode: forwards; 
+            }
+        </style>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-191535811-2"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -36,7 +60,7 @@
             gtag('config', 'UA-191535811-2');
         </script>
     </head>
-    <body style="font-weight: 400 ">
+    <body style="font-weight: 400;background-image: black">
         
         <!--================Header Menu Area =================-->
         <header class="header_area">
@@ -90,10 +114,11 @@
         		<div class="gallery_f_inner row imageGallery1" id="project">
                     {% for pr in projects %}
         			<div class="col-lg-4 col-md-4 col-sm-6">
-                        <div style="word-wrap: break-word">
-                            <h2>&#9755&nbsp{{pr.about}}</h2>
+                        <div class="page">
+                            <h2><i class="fa fa-anchor" aria-hidden="true"></i>&nbsp{{pr.about}}</h2>
                             <p>&#128279&nbsp<a href="{{pr.link}}" target="_blank">{{pr.link}}</a></p>
                             <blockquote>{{pr.desc}}</blockquote>
+                            <img src="{% static 'img/underline.png' %}" style="width:100%">
                         </div>
         			</div>
                     {% endfor %}
@@ -108,8 +133,8 @@
                 <div class="gallery_f_inner row imageGallery1" id="achieve">
                     {% for ach in achievements %}
                     <div class="col-lg-4 col-md-4 col-sm-6">
-                        <div style="word-wrap: break-word">
-                            <h2>&#9755&nbsp{{ach.field}}</h2>
+                        <div class="page">
+                            <h2><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp{{ach.field}}</h2>
                             <p style="color:blue">{{ach.platform}}</p>
                             {% ifequal ach.auth_url 'None' %}
                             <p>Not Available</p>
@@ -117,6 +142,7 @@
                             <p>&#128279&nbsp<a href="{{ach.auth_url}}" target="_blank">{{ach.auth_url}}</a></p>
                             {% endifequal %}
                             <blockquote>{{ach.descn}}</blockquote>
+                            <img src="{% static 'img/underline.png' %}">
                         </div>
                     </div>
                     {% endfor %}
