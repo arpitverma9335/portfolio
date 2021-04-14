@@ -1,16 +1,15 @@
 {% load compress %}
 {% load static %}
-<!doctype html>
+{% load pwa %}
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="description" content="I am Arpit Verma, an undergraduate student of NIT Patna">
-        <meta name="author" content="Arpit Verma">
-        <meta name="keywords" content="arpit verma,arpitverma,vermaarpit,arpit verma profile,arpit verma heroku,arpit verma herokuapp,arpit profile,about arpit,about arpitnitp,nit patna arpit,mechanical arpit verma,about arpit verma,about nit arpit,about verma arpit,arpit verma nit patna,arpit verma nit patna mechanical,arpitvermanitpatnamechanical">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        {% progressive_web_app_meta %}
+        <meta name="keywords" content="arpit verma,arpitverma,vermaarpit,arpit verma profile,arpit verma heroku,arpit verma herokuapp,arpit profile,about arpit,about arpitnitp,nit patna arpit,mechanical arpit verma,about arpit verma,about nit arpit,about verma arpit,arpit verma nit patna,arpit verma nit patna mechanical,arpitvermanitpatnamechanical">
         <link rel="shortcut icon" href="{% static 'img/icon.ico' %}" type="image/x-icon">
-        <link rel="icon" href="{% static 'img/icon.png' %}" style="border-radius: 50%" type="image/png">
         <title>Personal | Arpit Verma</title>
         <!-- Bootstrap CSS -->
         {% compress css inline %}
