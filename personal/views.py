@@ -50,3 +50,6 @@ def single_blog(request):
 def contacts(request):
 	contact_obj = contact.objects.all()
 	return render(request , 'contact.html' , {'contacts':contact_obj})
+
+def offline(request):
+	return render(request , 'offline.html')

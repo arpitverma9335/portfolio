@@ -11,4 +11,5 @@ urlpatterns = [
     path('blog',views.blog_func),
     path('single-blog',views.single_blog),
     path('contact',views.contacts),
+    path('offline',views.offline),
 ]
