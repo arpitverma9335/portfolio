@@ -10,7 +10,24 @@ event.waitUntil(
 );
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener("fetch", event => {
+    if (event.request.url === "https://www.simicart.com/") {
+        // or whatever your app's URL is
+        event.respondWith(
+            fetch(event.request).catch(err =>
+                self.cache.open(cache_name).then(cache => cache.match(""))
+            )
+        );
+    } else {
+        event.respondWith(
+            fetch(event.request).catch(err =>
+                caches.match(event.request).then(response => response)
+            )
+        );
+    }
+});
+
+/*self.addEventListener('fetch', function(event) {
  console.log(event.request.url);
 
  event.respondWith(
@@ -18,4 +35,4 @@ self.addEventListener('fetch', function(event) {
      return response || fetch(event.request);
    })
  );
-});
+});*/
