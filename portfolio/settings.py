@@ -52,7 +52,7 @@ PWA_APP_BACKGROUND_COLOR = '#ffffff'
 PWA_APP_DISPLAY = 'standalone' 
 #PWA_APP_SCOPE = '/' 
 PWA_APP_ORIENTATION = 'any' 
-PWA_APP_START_URL = '/offline' 
+PWA_APP_START_URL = '/' 
 PWA_APP_STATUS_BAR_COLOR = 'default' 
 PWA_APP_ICONS = [ { 'src': '/static/img/icon_192x192.png', 'sizes': '192x192', "purpose": "any maskable"},
                    { 'src': '/static/img/icon_160x160.png', 'sizes': '160x160', "purpose": "any maskable"},
