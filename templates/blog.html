@@ -36,9 +36,12 @@
 
             gtag('config', 'UA-191535811-2');
         </script>
+        <style>
+            #cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #000; z-index:9999;background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;}
+        </style>
     </head>
     <body>
-        
+        <div id="cover"></div>
         <!--================Header Menu Area =================-->
         <header class="header_area">
             <div class="main_menu">
@@ -152,5 +155,9 @@
         <script src="{% static 'js/mail-script.js' %}"></script>
         <script src="{% static 'js/theme.js' %}"></script>
         {% endcompress %}
+        <script>
+            $(window).on('load', function() {
+            $("#cover").hide();});
+        </script>
     </body>
 </html>
