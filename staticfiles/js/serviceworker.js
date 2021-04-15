@@ -4,14 +4,14 @@ self.addEventListener('install', function(event) {
 event.waitUntil(
   caches.open(staticCacheName).then(function(cache) {
   return cache.addAll([
-     '/offline',
+     '/',
   ]);
   })
 );
 });
 
 self.addEventListener("fetch", event => {
-    if (event.request.url == "https://varpit.herokuapp.com/") {
+    if (event.request.url === "https://www.simicart.com/") {
         // or whatever your app's URL is
         event.respondWith(
             fetch(event.request).catch(err =>
