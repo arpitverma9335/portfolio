@@ -4,18 +4,18 @@ self.addEventListener('install', function(event) {
 event.waitUntil(
   caches.open(staticCacheName).then(function(cache) {
   return cache.addAll([
-     '/static/img/banner/banner-2.62686fcfc741.jpg?5e0a4f7c70ab',
+     '/offline',
   ]);
   })
 );
 });
 
 self.addEventListener("fetch", event => {
-    if (event.request.url == "https://varpit.herokuapp.com/blog") {
+    if (event.request.url == "https://varpit.herokuapp.com/") {
         // or whatever your app's URL is
         event.respondWith(
             fetch(event.request).catch(err =>
-                self.cache.open(cache_name).then(cache => cache.match("/static/img/banner/banner-2.62686fcfc741.jpg?5e0a4f7c70ab"))
+                self.cache.open(cache_name).then(cache => cache.match(""))
             )
         );
     } else {
