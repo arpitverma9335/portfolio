@@ -4,14 +4,15 @@ self.addEventListener('install', function(event) {
 event.waitUntil(
   caches.open(staticCacheName).then(function(cache) {
   return cache.addAll([
-     '/offline',
+     '/static/img/arpit_profile.f8b5a837761f.jpg',
+     '/static/img/banner/banner-2.62686fcfc741.jpg?5e0a4f7c70ab',
   ]);
   })
 );
 });
 
 self.addEventListener("fetch", event => {
-    if (event.request.url === "https://www.simicart.com/") {
+    if (event.request.url == "https://varpit.herokuapp.com/") {
         // or whatever your app's URL is
         event.respondWith(
             fetch(event.request).catch(err =>
