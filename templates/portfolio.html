@@ -63,7 +63,7 @@
             #cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #000;opacity:0.7 ; z-index:9999;background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;}
         </style>
     </head>
-    <body style="font-weight: 400;background-image: black">
+    <body style="font-weight:900 ; background-image: url('static/img/project.jpg'); opacity:0.8 ; background-repeat: no-repeat;background-attachment: fixed; background-size: 100% 100%;">
         <div id="cover"></div>
         <!--================Header Menu Area =================-->
         <header class="header_area">
@@ -112,9 +112,9 @@
         <section class="home_gallery_area p_120">
         	<div class="container">
         		<div class="main_title">
-        			<h2>My Projects</h2>
+        			<h2 style="color:white">My Projects</h2>
         		</div>
-        		<div class="gallery_f_inner row imageGallery1" id="project">
+        		<div class="gallery_f_inner row imageGallery1" id="project" style="background-color:rgba(0 , 0 ,0 , 0.9">
                     {% for pr in projects %}
         			<div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="page">
@@ -131,9 +131,9 @@
         <section class="home_gallery_area p_120">
             <div class="container">
                 <div class="main_title">
-                    <h2>My Achievements</h2>
+                    <h2 style="color:white">My Achievements</h2>
                 </div>
-                <div class="gallery_f_inner row imageGallery1" id="achieve">
+                <div class="gallery_f_inner row imageGallery1" id="achieve" style="background-color:rgba(0 , 0 ,0 , 0.9">
                     {% for ach in achievements %}
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="page">
@@ -145,7 +145,7 @@
                             <p>&#128279&nbsp<a href="{{ach.auth_url}}" target="_blank">{{ach.auth_url}}</a></p>
                             {% endifequal %}
                             <blockquote>{{ach.descn}}</blockquote>
-                            <img src="{% static 'img/underline.png' %}">
+                            <img src="{% static 'img/underline.png' %}" style="width:100%">
                         </div>
                     </div>
                     {% endfor %}
