@@ -37,12 +37,8 @@
 
             gtag('config', 'UA-191535811-2');
         </script>
-        <style>
-            #cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #000;opacity:0.5 ; z-index:9999;background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;}
-        </style>
     </head>
     <body>
-        <div id="cover"></div>
         <!--================Header Menu Area =================-->
         <header class="header_area">
             <div class="main_menu">
@@ -83,7 +79,7 @@
 					<div class="banner_content">
 						<div class="media">
 							<div class="d-flex">
-								<img src="{% static 'img/arpit_profile.jpg' %}" width:auto height:auto alt="profile pic">
+								<img src="{% static 'img/arpit_profile.jpeg2000' %}" width:auto height:auto alt="profile pic">
 							</div>
 							<div class="media-body">
 								<div class="personal_text">
@@ -109,7 +105,7 @@
         </section>
         <!--================End Home Banner Area =================-->
         <footer class="footer_area p_30" style="background-color:white;color:black;font-family:Courier New">
-            <marquee>Copyright &copy;<script>document.write(new Date().getFullYear());</script>&nbspAll rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" rel="noreferrer" target="_blank">Colorlib</a></marquee>
+            <marquee>Copyright &copy; All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" rel="noreferrer" target="_blank">Colorlib</a></marquee>
         </footer>
         
         <!--================Welcome Area =================-->
@@ -132,10 +128,5 @@
         <script src="{% static 'js/mail-script.js' %}"></script>
         <script src="{% static 'js/theme.js' %}"></script>
         {% endcompress %}
-        <script>
-            $(document).ready(function() {
-                $("#cover").hide();
-            });
-        </script>
     </body>
 </html>

@@ -36,12 +36,8 @@
 
             gtag('config', 'UA-191535811-2');
         </script>
-        <style>
-            #cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #000;opacity:0.7 ; z-index:9999;background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;}
-        </style>
     </head>
     <body>
-        <div id="cover"></div>
         <!--================Header Menu Area =================-->
         <header class="header_area">
             <div class="main_menu">
@@ -141,17 +137,17 @@
 					<div class="testi_slider owl-carousel">
 						<div class="item">
 							<div class="testi_item">
-                                <img src="{% static 'img/third.jpeg' %}">
+                                <img src="{% static 'img/third.jpeg2000' %}">
 							</div>
 						</div>
 						<div class="item">
 							<div class="testi_item">
-								<img src="{% static 'img/arpit_profile.jpg' %}">
+								<img src="{% static 'img/arpit_profile.jpeg2000' %}">
 							</div>
 						</div>
 						<div class="item">
 							<div class="testi_item">
-                                <img src="{% static 'img/sec.jpeg' %}">
+                                <img src="{% static 'img/sec.jpeg2000' %}">
 							</div>
 						</div>
 					</div>
@@ -162,7 +158,7 @@
         
         <!--================Footer Area =================-->
         <footer class="footer_area p_30">
-            <marquee>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></marquee>
+            <marquee>Copyright &copy; All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></marquee>
         </footer>
         <!--================End Footer Area =================-->
         
@@ -188,10 +184,5 @@
         <script src="{% static 'js/mail-script.js' %}"></script>
         <script src="{% static 'js/theme.js' %}"></script>
         {% endcompress %}
-        <script>
-            $(document).ready(function() {
-                $("#cover").hide();
-            });
-        </script>
     </body>
 </html>
