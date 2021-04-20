@@ -13,7 +13,7 @@
         <link rel="icon" href="{% static 'img/icon.png' %}" style="border-radius: 50%" type="image/png">
         <title>Contact</title>
         <!-- Bootstrap CSS -->
-        {% compress css inline %}
+        {% compress css %}
         <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
         <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
         <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
@@ -54,6 +54,7 @@
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
 								<li class="nav-item active"><a class="nav-link" href="{{'/'}}">Home</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="about">About</a></li>
 							</ul>
 						</div> 
 					</div>
@@ -109,7 +110,7 @@
             <marquee>Copyright &copy; All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></marquee>
         </footer>
 
-        {% compress js inline %}
+        {% compress js %}
         <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
         <script src="{% static 'js/popper.js' %}"></script>
         <script src="{% static 'js/bootstrap.min.js' %}"></script>
@@ -128,10 +129,6 @@
         <script src="{% static 'js/jquery.form.js' %}"></script>
         <script src="{% static 'js/jquery.validate.min.js' %}"></script>
         <script src="{% static 'js/contact.js' %}"></script>
-        <!--gmaps Js-->
-        <script src="{% static 'js/gmaps.min.js' %}"></script>
-        <script src="{% static 'js/theme.js' %}"></script>
         {% endcompress %}
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
     </body>
 </html>

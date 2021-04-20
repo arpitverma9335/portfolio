@@ -13,7 +13,7 @@
         <link rel="icon" href="{% static 'img/icon.png' %}" style="border-radius: 50%" type="image/png">
         <title>Blogs</title>
         <!-- Bootstrap CSS -->
-        {% compress css inline %}
+        {% compress css %}
         <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
         <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
         <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
@@ -72,7 +72,7 @@
 					<div class="blog_b_text text-center">
 						<h2>Blogs</h2>
 						<p>Life is short, Enjoy every single moment</p>
-						<a class="white_bg_btn" href="#blog-start">View More</a>
+						<a class="white_bg_btn" href="#blog-start">View blogs</a>
 					</div>
 				</div>
             </div>
@@ -111,7 +111,6 @@
                                                 <input type="hidden" name="blogID" value={{bg.id}}>
                                                 <button type="submit" style="border:none" class="white_bg_btn">View More</button>
                                             </form>
-                                            <!--<a href="view_more" class="white_bg_btn">View More</a>-->
                                         </div>
                                     </div>
                                 </div>
@@ -134,7 +133,7 @@
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        {% compress js inline %}
+        {% compress js %}
         <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
         <script src="{% static 'js/popper.js' %}"></script>
         <script src="{% static 'js/bootstrap.min.js' %}"></script>

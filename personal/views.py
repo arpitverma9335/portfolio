@@ -24,15 +24,12 @@ def index_func(request):
 def about(request):
 	skills = skill.objects.all().order_by('-percent')
 	aim_obj = aim_about.objects.all()
-	return render(request , 'about-us.html' , {'skills':skills , 'aim_about':aim_obj})
+	proj = project.objects.all()
+	ach = achievement.objects.all()
+	return render(request , 'about-us.html' , {'skills':skills , 'aim_about':aim_obj , 'projects':proj , 'achievements':ach})
 
 def services(request):
 	return render(request , 'services.html')
-
-def portfolio(request):
-	proj = project.objects.all()
-	ach = achievement.objects.all()
-	return render(request , 'portfolio.html',{'projects':proj , 'achievements':ach})
 
 def more(request):
 	blog_id = request.GET['blogID']

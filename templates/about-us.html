@@ -13,7 +13,7 @@
         <link rel="icon" href="{% static 'img/icon.png' %}" style="border-radius: 50%" type="image/png">
         <title>About Me</title>
         <!-- Bootstrap CSS -->
-        {% compress css inline %}
+        {% compress css %}
         <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
         <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
         <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
@@ -36,6 +36,15 @@
 
             gtag('config', 'UA-191535811-2');
         </script>
+        <style>
+            .page {
+                font-size:1vw;
+                border: 5px outset lightblue;
+                padding:10px;
+                margin:5px;
+                word-wrap: break-word;
+            }
+        </style>
     </head>
     <body>
         <!--================Header Menu Area =================-->
@@ -54,7 +63,6 @@
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
 								<li class="nav-item active"><a class="nav-link" href="{{'/'}}">Home</a></li>
-								<li class="nav-item"><a class="nav-link" href="portfolio">Portfolio</a></li>
                                 <li class="nav-item"><a class="nav-link" href="blog">Blogs</a></li>
 								<li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
 							</ul>
@@ -75,7 +83,8 @@
 							<div class="page_link">
 								<a href="{{'/'}}">Home</a>
 								<a href="#about-start">About Me</a>
-                                <a href="#gallery">Gallery</a>
+                                <a href="#proj">Projects</a>
+                                <a href="#ach">Achievements</a>
 							</div>
 						</div>
 					</div>
@@ -87,12 +96,12 @@
         <!--================End Home Banner Area =================-->
         
         <!--================Welcome Area =================-->
-        <section class="welcome_area p_120">
+        <section class="welcome_area p_120" id="about-start">
         	<div class="container">
         		<div class="row welcome_inner">
                     {% for aimabout in aim_about %}
         			<div class="col-lg-12">
-        				<div class="welcome_text" id="about-start">
+        				<div class="welcome_text">
         					<h4>About Myself</h4>
         					<p>{{aimabout.myself}}</p>
         				</div>
@@ -125,36 +134,48 @@
         	</div>
         </section>
         <!--================End Welcome Area =================-->
-        
-        <!--================Testimonials Area =================-->
-        <section class="testimonials_area p_120" id="gallery">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>Gallery</h2>
-        			<p></p>
-        		</div>
-        		<div class="testi_inner">
-					<div class="testi_slider owl-carousel">
-						<div class="item">
-							<div class="testi_item">
-                                <img src="{% static 'img/third.jpeg2000' %}">
-							</div>
-						</div>
-						<div class="item">
-							<div class="testi_item">
-								<img src="{% static 'img/arpit_profile.jpeg2000' %}">
-							</div>
-						</div>
-						<div class="item">
-							<div class="testi_item">
-                                <img src="{% static 'img/sec.jpeg2000' %}">
-							</div>
-						</div>
-					</div>
-        		</div>
-        	</div>
+        <section class="home_gallery_area p_120" id = "proj">
+            <div class="container">
+                <div class="main_title">
+                    <h2>My Projects</h2>
+                </div>
+                <div class="gallery_f_inner row imageGallery1" id="project">
+                    {% for pr in projects %}
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class ="page">
+                            <h3><i class="fa fa-star" aria-hidden="true"></i>&nbsp{{pr.about}}</h3>
+                            <p>&#128279&nbsp<a href="{{pr.link}}" target="_blank">{{pr.link}}</a></p>
+                            <blockquote>{{pr.desc}}</blockquote>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
         </section>
-        <!--================End Testimonials Area =================-->
+
+        <section class="home_gallery_area p_120" id="ach">
+            <div class="container">
+                <div class="main_title">
+                    <h2>My Achievements</h2>
+                </div>
+                <div class="gallery_f_inner row imageGallery1" id="achieve">
+                    {% for ach in achievements %}
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="page">
+                            <h3><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp{{ach.field}}</h3>
+                            <p style="color:blue">{{ach.platform}}</p>
+                            {% ifequal ach.auth_url 'None' %}
+                            <p>Not Available</p>
+                            {% else %}
+                            <p>&#128279&nbsp<a href="{{ach.auth_url}}" target="_blank">{{ach.auth_url}}</a></p>
+                            {% endifequal %}
+                            <blockquote>{{ach.descn}}</blockquote>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
         
         <!--================Footer Area =================-->
         <footer class="footer_area p_30">
@@ -167,7 +188,7 @@
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        {% compress js inline %}
+        {% compress js %}
         <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
         <script src="{% static 'js/popper.js' %}"></script>
         <script src="{% static 'js/bootstrap.min.js' %}"></script>

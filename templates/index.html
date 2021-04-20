@@ -14,7 +14,7 @@
         <link rel="shortcut icon" href="{% static 'img/icon.ico' %}" type="image/x-icon">
         <title>Personal | Arpit Verma</title>
         <!-- Bootstrap CSS -->
-        {% compress css inline %}
+        {% compress css %}
         <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
         <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
         <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
@@ -55,14 +55,7 @@
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
 								<li class="nav-item"><a class="nav-link" href="about">About</a></li> 
-								<!--<li class="nav-item"><a class="nav-link" href="services">Services</a></li>-->
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="portfolio">Portfolio</a></li>
-										<li class="nav-item"><a class="nav-link" href="blog">Blog</a></li>
-									</ul>
-								</li> 
+                                <li class="nav-item"><a class="nav-link" href="blog">My Blogs</a></li>
 								<li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
 							</ul>
 						</div> 
@@ -111,7 +104,7 @@
         <!--================Welcome Area =================-->
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        {% compress js inline %}
+        {% compress js %}
         <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
         <script src="{% static 'js/popper.js' %}"></script>
         <script src="{% static 'js/bootstrap.min.js' %}"></script>
