@@ -9,16 +9,6 @@ from .models import aim_about
 
 # Create your views here.
 def index_func(request):
-	x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
-	if x_forwarded_for:
-		ip = x_forwarded_for.split(',')[0]
-	else:
-		ip = request.META.get('REMOTE_ADDR')
-	u = user_ip(ip = ip)
-	if len(user_ip.objects.filter(ip = ip).values()) > 0:
-		pass
-	else:
-		u.save()
 	return render(request , 'index.html')
 
 def about(request):
