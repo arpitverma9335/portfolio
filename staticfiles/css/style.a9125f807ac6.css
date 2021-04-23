@@ -2709,23 +2709,23 @@ h6 {
   letter-spacing: 2.1px;
   font-weight: normal;
   margin-bottom: 12px;
-  color: #222222; }
+  color: black; }
 .personal_text h4 {
   font-size: 16px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #222222; }
+  color: black; }
 .personal_text h3 {
   font-size: 48px;
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: #222222; }
+  color: black; }
 .personal_text p {
   font-family: "Roboto", sans-serif;
   max-width: 540px;
-  color: #777777;
+  color: black;
   margin-bottom: 40px; }
 .personal_text .basic_info li {
   margin-bottom: 15px; }
@@ -2733,7 +2733,7 @@ h6 {
     position: relative;
     padding-left: 40px;
     font-size: 16px;
-    color: #777777; }
+    color: black; }
     .personal_text .basic_info li a i {
       position: absolute;
       left: 0px;
@@ -2757,7 +2757,7 @@ h6 {
       border-radius: 5px;
       display: inline-block;
       text-align: center;
-      color: #fff;
+      color: black;
       font-size: 16px; }
     .personal_text .personal_social li:hover a {
       background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
