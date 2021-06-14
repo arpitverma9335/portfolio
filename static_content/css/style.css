@@ -125,6 +125,10 @@ button:focus {
     line-height: 26px;
     color: #777777;
     margin-bottom: 0px; }
+.page {
+  word-wrap: break-word;
+  font-family: Copperplate, Papyrus, fantasy;
+}
 
 /* End Main Title Area css
 ============================================================================================ */
@@ -582,7 +586,10 @@ button:focus {
     .blog_details h2:hover {
       color: #766dff; }
   .blog_details p {
-    margin-bottom: 26px; }
+    margin-bottom: 26px;
+    font-family: Copperplate, Papyrus, fantasy;
+
+  }
 
 .view_btn {
   font-size: 14px;
@@ -2489,7 +2496,7 @@ h6 {
   text-transform: uppercase; }
 .welcome_text p {
   max-width: 495px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lucida Console", Monaco, monospace;
   margin-bottom: 40px; }
 
 .wel_item {
