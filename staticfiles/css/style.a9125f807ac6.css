@@ -129,6 +129,10 @@ button:focus {
    word-wrap: break-word;
   font-family: Copperplate, Papyrus, fantasy;
 }
+.page img{
+  width: 30%;
+  height: 5%;
+}
 /* End Main Title Area css
 ============================================================================================ */
 /*---------------------------------------------------- */

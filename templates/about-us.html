@@ -137,7 +137,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="page">
                             <h3><i class="fa fa-star" aria-hidden="true"></i>&nbsp{{pr.about}}</h3>
-                            <p>&#128279&nbsp<a href="{{pr.link}}" target="_blank" rel="noreferrer">{{pr.link}}</a></p>
+                            <a href="{{pr.link}}" target="_blank" rel="noreferrer"><img src="{% static 'img/click.jpeg2000' %}"></a>
                             <blockquote>{{pr.desc}}</blockquote>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
                             {% ifequal ach.auth_url 'None' %}
                             <p>Not Available</p>
                             {% else %}
-                            <p>&#128279&nbsp<a href="{{ach.auth_url}}" target="_blank" rel="noreferrer">{{ach.auth_url}}</a></p>
+                            <a href="{{ach.auth_url}}" target="_blank" rel="noreferrer"><img src="{% static 'img/click.jpeg2000' %}"></a>
                             {% endifequal %}
                             <blockquote>{{ach.descn}}</blockquote>
                         </div>
