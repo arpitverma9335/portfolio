@@ -358,6 +358,8 @@ button:focus {
       left: 0px;
       top: 0px;
       width: 100%;
+      background-repeat: no-repeat;
+      background-size:cover;
       z-index: -1; }
     .blog_banner .banner_inner .blog_b_text {
       max-width: 700px;
@@ -366,17 +368,20 @@ button:focus {
       .blog_banner .banner_inner .blog_b_text h2 {
         font-size: 60px;
         font-weight: bold;
-        font-family: "Heebo", sans-serif;
+        font-family: cursive;
         line-height: 66px;
         margin-bottom: 15px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        color: deeppink; }
       .blog_banner .banner_inner .blog_b_text p {
-        font-size: 16px;
-        margin-bottom: 35px; }
+        font-size: 18px;
+        margin-bottom: 35px; 
+        color:  black;}
       .blog_banner .banner_inner .blog_b_text .white_bg_btn {
         line-height: 42px;
         padding: 0px 45px;
-        border-radius: 5px; }
+        border-radius: 5px;
+        background-color: greenyellow; }
 
 .banner_box {
   max-width: 1620px;
