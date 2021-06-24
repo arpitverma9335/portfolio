@@ -115,7 +115,7 @@ button:focus {
   .main_title h2 {
     font-family: "Heebo", sans-serif;
     font-size: 36px;
-    color: #222222;
+    color: steelblue;
     margin-bottom: 15px;
     text-transform: uppercase; }
   .main_title p {
@@ -123,7 +123,7 @@ button:focus {
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     line-height: 26px;
-    color: #777777;
+    color: darkolivegreen;
     margin-bottom: 0px; }
 .page {
   word-wrap: break-word;
@@ -2498,7 +2498,7 @@ h6 {
     margin-top: -30px; }
 
 .welcome_text h4 {
-  color: #222222;
+  color: dodgerblue;
   font-family: "Heebo", sans-serif;
   font-size: 36px;
   margin-bottom: 18px;
@@ -2923,11 +2923,14 @@ h6 {
   border: 1px solid #eeeeee;
   border-radius: 10px;
   background: #fff;
-  padding: 40px 28px; }
+  padding: 40px 28px;
+  word-wrap: break-word; }
   .testi_item p {
-    font-style: italic; }
+    font-family: "Monaco", monospace;
+    font-size: 13px;
+    color: black; }
   .testi_item h4 {
-    color: #222222;
+    color: palevioletred;
     font-size: 18px;
     text-transform: uppercase; }
   .testi_item a {

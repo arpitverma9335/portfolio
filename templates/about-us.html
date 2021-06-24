@@ -125,54 +125,54 @@
                 </div>
             </div>
         </section>
-        <!--================End Welcome Area =================-->
 
-        <section class="home_gallery_area p_120" id="proj">
+
+        <section class="testimonials_area p_120" id="proj">
             <div class="container">
                 <div class="main_title">
                     <h2>My Projects</h2>
+                    <p>"What we have once enjoyed we can never lose. All that we love deeply becomes a part of us."</p>
                 </div>
-                <div class="gallery_f_inner row imageGallery1">
-                    {% for pr in projects %}
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <div class="page">
-                            <h3><i class="fa fa-star" aria-hidden="true"></i>&nbsp{{pr.about}}</h3>
-                            <a href="{{pr.link}}" target="_blank" rel="noreferrer"><img src="{% static 'img/click.jpeg2000' %}"></a>
-                            <blockquote>{{pr.desc}}</blockquote>
+                <div class="testi_inner">
+                    <div class="testi_slider owl-carousel">
+                        {% for pr in projects %}
+                        <div class="item">
+                            <a href="{{pr.link}}" target="_blank">
+                                <div class="testi_item">
+                                    <h4>{{pr.about}}</h4>
+                                    <p>{{pr.desc}}</p>
+                                </div>
+                            </a>
                         </div>
-                        <img src="{% static 'img/line.jpeg2000' %}" alt="seperation line" style="width:80%">
+                        {% endfor %}
                     </div>
-                    {% endfor %}
                 </div>
             </div>
         </section>
-        <section class="home_gallery_area p_120" id="ach">
+
+        <section class="testimonials_area p_120" id="ach">
             <div class="container">
                 <div class="main_title">
                     <h2>My Achievements</h2>
+                    <p>"The value of achievement lies in the achieving."</p>
                 </div>
-                <div class="gallery_f_inner row imageGallery1">
-                    {% for ach in achievements %}
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <div class="page">
-                            <h3><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp{{ach.field}}</h3>
-                            <p style="color:blue">{{ach.platform}}</p>
-                            {% ifequal ach.auth_url 'None' %}
-                            <p>Not Available</p>
-                            {% else %}
-                            <a href="{{ach.auth_url}}" target="_blank" rel="noreferrer"><img src="{% static 'img/click.jpeg2000' %}"></a>
-                            {% endifequal %}
-                            <blockquote>{{ach.descn}}</blockquote>
+                <div class="testi_inner">
+                    <div class="testi_slider owl-carousel">
+                        {% for ach in achievements %}
+                        <div class="item">
+                            <a href="{{ach.auth_url}}" target="_blank">
+                                <div class="testi_item">
+                                    <h4>{{ach.field}}</h4>
+                                    <h5>{{ach.platform}}</h5>
+                                    <p>{{ach.descn}}</p>
+                                </div>
+                            </a>
                         </div>
-                        <img src="{% static 'img/line.jpeg2000' %}" alt="seperation line" style="width:80%">
+                        {% endfor %}
                     </div>
-                    {% endfor %}
                 </div>
             </div>
         </section>
-        
-        <!--================Testimonials Area =================-->
-        <!--================End Testimonials Area =================-->
         
         <!--================Footer Area =================-->
         <footer class="footer_area p_30">
