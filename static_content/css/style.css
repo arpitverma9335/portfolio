@@ -2511,6 +2511,14 @@ h6 {
   font-family: "Lucida Console", Monaco, monospace;
   margin-bottom: 40px; }
 
+.welcome_text_sk h4 {
+  color: indianred;
+  font-family: "Brush Script MT", cursive;
+  font-size: 26px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  text-transform: uppercase; }
+
 .wel_item {
   border: 1px solid #eeeeee;
   padding: 20px 20px;

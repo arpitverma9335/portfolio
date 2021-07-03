@@ -34,6 +34,13 @@ class skill(models.Model):
 	def __str__(self):
 		return self.area
 
+class sf_skill(models.Model):
+	sf_area = models.CharField(max_length = 40)
+	sf_percent = models.IntegerField(default = 0)
+
+	def __str__(self):
+		return self.sf_area
+
 class user_ip(models.Model):
 	ip = models.GenericIPAddressField(default = None)
 	time = models.DateTimeField(auto_now=True)

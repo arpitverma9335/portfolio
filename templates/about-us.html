@@ -104,8 +104,8 @@
                     </div>
                     {% endfor %}
                     <div class="col-lg-6">
-                        <div class="welcome_text">
-                            <h4>My Skills</h4>
+                        <div class="welcome_text_sk">
+                            <h4>Tech Skills</h4>
                         </div>
                         <div class="tools_expert">
                             <div class="skill_main">
@@ -115,6 +115,25 @@
                                     <div class="progress_br">
                                         <div class="progress">
                                             <div class="progress-bar" role="progressbar" aria-valuenow="{{sk.percent}}" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="welcome_text_sk">
+                            <h4>Soft Skills</h4>
+                        </div>
+                        <div class="tools_expert">
+                            <div class="skill_main">
+                                {% for sfk in sf_skills %}
+                                <div class="skill_item">
+                                    <h4>{{sfk.sf_area}}</h4>
+                                    <div class="progress_br">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="{{sfk.sf_percent}}" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                 </div>

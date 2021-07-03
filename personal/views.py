@@ -3,6 +3,7 @@ from .models import blog
 from .models import project
 from .models import achievement
 from .models import skill
+from .models import sf_skill
 from .models import user_ip
 from .models import contact
 from .models import aim_about
@@ -23,10 +24,11 @@ def index_func(request):
 
 def about(request):
 	skills = skill.objects.all().order_by('-percent')
+	sf_skills = sf_skill.objects.all().order_by('-sf_percent')
 	aim_obj = aim_about.objects.all()
 	proj = project.objects.all()
 	ach = achievement.objects.all()
-	return render(request , 'about-us.html' , {'skills':skills , 'aim_about':aim_obj , 'projects':proj , 'achievements':ach})
+	return render(request , 'about-us.html' , {'skills':skills ,'sf_skills':sf_skills , 'aim_about':aim_obj , 'projects':proj , 'achievements':ach})
 
 def services(request):
 	return render(request , 'services.html')
