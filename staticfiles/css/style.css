@@ -41,7 +41,7 @@ Table of Content:
 /*font Variables*/
 /*Color Variables*/
 /*=================== fonts ====================*/
-@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700&display=swap");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .list {
@@ -2510,6 +2510,14 @@ h6 {
   max-width: 495px;
   font-family: "Lucida Console", Monaco, monospace;
   margin-bottom: 40px; }
+
+.welcome_text_sk h4 {
+  color: indianred;
+  font-family: "Brush Script MT", cursive;
+  font-size: 26px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  text-transform: uppercase; }
 
 .wel_item {
   border: 1px solid #eeeeee;

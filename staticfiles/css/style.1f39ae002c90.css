@@ -41,7 +41,7 @@ Table of Content:
 /*font Variables*/
 /*Color Variables*/
 /*=================== fonts ====================*/
-@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700&display=swap");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .list {
@@ -315,10 +315,10 @@ button:focus {
   margin-bottom: 200px; }
   .home_banner_area .box_1620 {
     min-height: 700px;
-    border-radius: 12px;
+    border-radius: 300px 50px;
     position: relative;
-    bottom: -200px;
-    background: #fff;
+    bottom: -100px;
+    background: #343a40;
     padding: 30px;
     box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3); }
   .home_banner_area .banner_inner {
@@ -333,6 +333,9 @@ button:focus {
       text-align: left; }
       .home_banner_area .banner_inner .banner_content .media .d-flex {
         padding-right: 125px; }
+        .home_banner_area .banner_inner .banner_content .media .d-flex img{
+          border-radius: 300px 50px;
+        }
       .home_banner_area .banner_inner .banner_content .media .media-body {
         vertical-align: middle;
         align-self: center; }
@@ -2508,6 +2511,14 @@ h6 {
   font-family: "Lucida Console", Monaco, monospace;
   margin-bottom: 40px; }
 
+.welcome_text_sk h4 {
+  color: indianred;
+  font-family: "Brush Script MT", cursive;
+  font-size: 26px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  text-transform: uppercase; }
+
 .wel_item {
   border: 1px solid #eeeeee;
   padding: 20px 20px;
@@ -2720,40 +2731,41 @@ h6 {
 
 .personal_text h6 {
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Courier New", monospace;
   text-transform: uppercase;
   letter-spacing: 2.1px;
   font-weight: normal;
   margin-bottom: 12px;
-  color: black; }
+  color: #eee; }
 .personal_text h4 {
   font-size: 16px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  font-family: "Monaco", monospace;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: black; }
+  color: #fff; }
 .personal_text h3 {
   font-size: 48px;
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: black; }
+  color: #e7f50c; }
 .personal_text p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Monaco", monospace;
   max-width: 540px;
-  color: black;
+  color: #eee;
   margin-bottom: 40px; }
 
 .personal_text .typewriter h2 {
+  font-family: "Brush Script MT", cursive;
+  color:  #ff000c;
   font-size: 48px;
   text-transform: uppercase;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .05em; /* Adjust as needed */
   animation: 
-    typing 2.5s steps(40, end),
+    typing 2.0s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
@@ -2775,14 +2787,14 @@ h6 {
     position: relative;
     padding-left: 40px;
     font-size: 16px;
-    color: black; }
+    color: #04f9f9; }
     .personal_text .basic_info li a i {
       position: absolute;
       left: 0px;
       top: 50%;
       transform: translateY(-50%);
       font-size: 20px;
-      color: #766dff; }
+      color: #04f9f9; }
   .personal_text .basic_info li:last-child {
     margin-bottom: 0px; }
 .personal_text .personal_social {
