@@ -41,7 +41,7 @@ Table of Content:
 /*font Variables*/
 /*Color Variables*/
 /*=================== fonts ====================*/
-@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700&display=swap");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .list {
@@ -115,7 +115,7 @@ button:focus {
   .main_title h2 {
     font-family: "Heebo", sans-serif;
     font-size: 36px;
-    color: #222222;
+    color: steelblue;
     margin-bottom: 15px;
     text-transform: uppercase; }
   .main_title p {
@@ -123,16 +123,17 @@ button:focus {
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     line-height: 26px;
-    color: #777777;
+    color: darkolivegreen;
     margin-bottom: 0px; }
 .page {
-   word-wrap: break-word;
+  word-wrap: break-word;
   font-family: Copperplate, Papyrus, fantasy;
 }
 .page img{
   width: 30%;
   height: 5%;
 }
+
 /* End Main Title Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
@@ -314,10 +315,10 @@ button:focus {
   margin-bottom: 200px; }
   .home_banner_area .box_1620 {
     min-height: 700px;
-    border-radius: 12px;
+    border-radius: 300px 50px;
     position: relative;
-    bottom: -200px;
-    background: #fff;
+    bottom: -100px;
+    background: #343a40;
     padding: 30px;
     box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3); }
   .home_banner_area .banner_inner {
@@ -332,6 +333,9 @@ button:focus {
       text-align: left; }
       .home_banner_area .banner_inner .banner_content .media .d-flex {
         padding-right: 125px; }
+        .home_banner_area .banner_inner .banner_content .media .d-flex img{
+          border-radius: 300px 50px;
+        }
       .home_banner_area .banner_inner .banner_content .media .media-body {
         vertical-align: middle;
         align-self: center; }
@@ -350,13 +354,15 @@ button:focus {
     min-height: 780px;
     z-index: 1; }
     .blog_banner .banner_inner .overlay {
-      background: url("../img/banner/banner-2.62686fcfc741.jpg") no-repeat scroll center center;
+      background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
       opacity: .5;
       height: 125%;
       position: absolute;
       left: 0px;
       top: 0px;
       width: 100%;
+      background-repeat: no-repeat;
+      background-size:cover;
       z-index: -1; }
     .blog_banner .banner_inner .blog_b_text {
       max-width: 700px;
@@ -365,17 +371,20 @@ button:focus {
       .blog_banner .banner_inner .blog_b_text h2 {
         font-size: 60px;
         font-weight: bold;
-        font-family: "Heebo", sans-serif;
+        font-family: cursive;
         line-height: 66px;
         margin-bottom: 15px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        color: deeppink; }
       .blog_banner .banner_inner .blog_b_text p {
-        font-size: 16px;
-        margin-bottom: 35px; }
+        font-size: 18px;
+        margin-bottom: 35px; 
+        color:  black;}
       .blog_banner .banner_inner .blog_b_text .white_bg_btn {
         line-height: 42px;
         padding: 0px 45px;
-        border-radius: 5px; }
+        border-radius: 5px;
+        background-color: greenyellow; }
 
 .banner_box {
   max-width: 1620px;
@@ -591,7 +600,8 @@ button:focus {
   .blog_details p {
     margin-bottom: 26px;
     font-family: Copperplate, Papyrus, fantasy;
- }
+
+  }
 
 .view_btn {
   font-size: 14px;
@@ -1009,7 +1019,7 @@ button:focus {
   position: relative; }
   .reservation_form_area .res_form_inner:before {
     content: "";
-    background: url("../img/contact-shap-1.92cb853e150c.png");
+    background: url(../img/contact-shap-1.png);
     position: absolute;
     left: -125px;
     height: 421px;
@@ -1018,7 +1028,7 @@ button:focus {
     transform: translateY(-50%); }
   .reservation_form_area .res_form_inner:after {
     content: "";
-    background: url("../img/contact-shap-2.f0654882256b.png");
+    background: url(../img/contact-shap-2.png);
     position: absolute;
     right: -125px;
     height: 421px;
@@ -2082,7 +2092,7 @@ h6 {
   color: #222222; }
 
 .primary-checkbox input:checked + label {
-  background: url("../img/elements/primary-check.01ada071fa76.png") no-repeat center center/cover;
+  background: url(../img/elements/primary-check.png) no-repeat center center/cover;
   border: none; }
 
 .confirm-checkbox {
@@ -2116,7 +2126,7 @@ h6 {
   border: 1px solid #f1f1f1; }
 
 .confirm-checkbox input:checked + label {
-  background: url("../img/elements/success-check.2f4c99a8e2e7.png") no-repeat center center/cover;
+  background: url(../img/elements/success-check.png) no-repeat center center/cover;
   border: none; }
 
 .disabled-checkbox {
@@ -2154,7 +2164,7 @@ h6 {
   z-index: 3; }
 
 .disabled-checkbox input:checked + label {
-  background: url("../img/elements/disabled-check.fad4cdc2c668.png") no-repeat center center/cover;
+  background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
   border: none; }
 
 .primary-radio {
@@ -2188,7 +2198,7 @@ h6 {
   border: 1px solid #f1f1f1; }
 
 .primary-radio input:checked + label {
-  background: url("../img/elements/primary-radio.741c84162a24.png") no-repeat center center/cover;
+  background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
   border: none; }
 
 .confirm-radio {
@@ -2222,7 +2232,7 @@ h6 {
   border: 1px solid #f1f1f1; }
 
 .confirm-radio input:checked + label {
-  background: url("../img/elements/success-radio.663f7df81d62.png") no-repeat center center/cover;
+  background: url(../img/elements/success-radio.png) no-repeat center center/cover;
   border: none; }
 
 .disabled-radio {
@@ -2269,7 +2279,7 @@ h6 {
   padding: 0px; }
 
 .disabled-radio input:checked + label {
-  background: url("../img/elements/disabled-radio.4eb0e34bf41b.png") no-repeat center center/cover;
+  background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
   border: none; }
 
 .default-select {
@@ -2491,7 +2501,7 @@ h6 {
     margin-top: -30px; }
 
 .welcome_text h4 {
-  color: #222222;
+  color: dodgerblue;
   font-family: "Heebo", sans-serif;
   font-size: 36px;
   margin-bottom: 18px;
@@ -2500,6 +2510,14 @@ h6 {
   max-width: 495px;
   font-family: "Lucida Console", Monaco, monospace;
   margin-bottom: 40px; }
+
+.welcome_text_sk h4 {
+  color: indianred;
+  font-family: "Brush Script MT", cursive;
+  font-size: 26px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  text-transform: uppercase; }
 
 .wel_item {
   border: 1px solid #eeeeee;
@@ -2713,40 +2731,41 @@ h6 {
 
 .personal_text h6 {
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Courier New", monospace;
   text-transform: uppercase;
   letter-spacing: 2.1px;
   font-weight: normal;
   margin-bottom: 12px;
-  color: black; }
+  color: #eee; }
 .personal_text h4 {
   font-size: 16px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  font-family: "Monaco", monospace;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: black; }
+  color: #fff; }
 .personal_text h3 {
   font-size: 48px;
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: black; }
+  color: #e7f50c; }
 .personal_text p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Monaco", monospace;
   max-width: 540px;
-  color: black;
+  color: #eee;
   margin-bottom: 40px; }
-  
+
 .personal_text .typewriter h2 {
+  font-family: "Brush Script MT", cursive;
+  color:  #ff000c;
   font-size: 48px;
   text-transform: uppercase;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .05em; /* Adjust as needed */
   animation: 
-    typing 2.5s steps(40, end),
+    typing 2.0s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
@@ -2768,14 +2787,14 @@ h6 {
     position: relative;
     padding-left: 40px;
     font-size: 16px;
-    color: black; }
+    color: #04f9f9; }
     .personal_text .basic_info li a i {
       position: absolute;
       left: 0px;
       top: 50%;
       transform: translateY(-50%);
       font-size: 20px;
-      color: #766dff; }
+      color: #04f9f9; }
   .personal_text .basic_info li:last-child {
     margin-bottom: 0px; }
 .personal_text .personal_social {
@@ -2916,11 +2935,14 @@ h6 {
   border: 1px solid #eeeeee;
   border-radius: 10px;
   background: #fff;
-  padding: 40px 28px; }
+  padding: 40px 28px;
+  word-wrap: break-word; }
   .testi_item p {
-    font-style: italic; }
+    font-family: "Monaco", monospace;
+    font-size: 13px;
+    color: black; }
   .testi_item h4 {
-    color: #222222;
+    color: palevioletred;
     font-size: 18px;
     text-transform: uppercase; }
   .testi_item a {
