@@ -119,9 +119,9 @@ button:focus {
     margin-bottom: 15px;
     text-transform: uppercase; }
   .main_title p {
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    font-weight: normal;
+    font-size: 25px;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 600;
     line-height: 26px;
     color: darkolivegreen;
     margin-bottom: 0px; }
@@ -1122,6 +1122,9 @@ button:focus {
     font-size: 14px;
     line-height: 24px;
     padding: 2px 0px; }
+  .contact_area {
+    padding-left: 20%;
+  }
 
 .contact_form .form-group {
   margin-bottom: 10px; }
@@ -2513,7 +2516,7 @@ h6 {
 
 .welcome_text_sk h4 {
   color: indianred;
-  font-family: "Brush Script MT", cursive;
+  font-family: 'Courier New', monospace;
   font-size: 26px;
   margin-top: 18px;
   margin-bottom: 18px;
@@ -2549,13 +2552,13 @@ h6 {
       margin-bottom: 0px; }
     .tools_expert .skill_main .skill_item h4 {
       text-align: none;
-      font-size: 14px;
-      font-family: "Roboto", sans-serif;
-      font-weight: 500;
-      color: #222222;
+      font-size: 15px;
+      font-family: "Garamond", serif;
+      font-weight: 800;
+      color: #0066ff;
       margin-bottom: 15px; }
     .tools_expert .skill_main .skill_item .progress_br {
-      border: 1px solid #eeeeee;
+      border: 1px solid #007bff;
       padding: 5px;
       border-radius: 10px; }
     .tools_expert .skill_main .skill_item .progress {
@@ -2569,9 +2572,9 @@ h6 {
         border-radius: 5px;
         vertical-align: middle;
         align-self: center;
-        background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-        background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-        background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%); }
+        background-image: -moz-linear-gradient(0deg, #fff829 0%, #dc88ff 100%);
+        background-image: -webkit-linear-gradient(0deg, #fff829 0%, #dc88ff 100%);
+        background-image: -ms-linear-gradient(0deg, #fff829 0%, #dc88ff 100%); }
 
 /* End Welcome Area css
 ============================================================================================ */
