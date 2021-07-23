@@ -13,6 +13,9 @@
         <link rel="icon" href="{% static 'img/icon.png' %}" style="border-radius: 50%" type="image/png">
         <title>Blog</title>
         <!-- Bootstrap CSS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
         {% compress css inline %}
         <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
         <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
@@ -104,14 +107,14 @@
                                         <li><a href="#">{{bg.date}}<i class="lnr lnr-calendar-full"></i></a></li>
                                     </ul>
                                     <ul class="social-links">
-                                        <li><a href="https://www.facebook.com/profile.php?id=100006731280996" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://www.facebook.com/profile.php?id=100006731280996" target="_blank" rel="noreferrer"><i class="fa fa-facebook"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             
                             <div class="col-lg-9 col-md-9 blog_details">
                                 <h2>{{bg.title}}</h2>
-                                <pre style="white-space: pre-wrap;">{{bg.content}}</pre>
+                                <pre style="font-family: 'Trade Winds', cursive; font-size:18px">{{bg.content}}</pre>
                             </div>
                             {% endfor %}
                         </div>

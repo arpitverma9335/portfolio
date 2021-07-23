@@ -593,7 +593,7 @@ button:focus {
   .blog_details h2 {
     font-size: 24px;
     line-height: 36px;
-    color: #222222;
+    color: #dc3545;
     font-weight: 600;
     transition: all 0.3s linear; }
     .blog_details h2:hover {
@@ -601,7 +601,10 @@ button:focus {
   .blog_details p {
     margin-bottom: 26px;
     font-family: Copperplate, Papyrus, fantasy;
-
+  }
+  .blog_details pre{
+    white-space: pre-wrap;
+    color: #222222;
   }
 
 .view_btn {
