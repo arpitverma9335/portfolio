@@ -191,6 +191,6 @@ COMPRESS_FILTERS = {
     ]
 }
 HTML_MINIFY = True
-KEEP_COMMENTS_ON_MINIFYING = True
+KEEP_COMMENTS_ON_MINIFYING = False
 
 django_heroku.settings(locals())
