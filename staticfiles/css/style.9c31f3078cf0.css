@@ -153,15 +153,16 @@ button:focus {
     .header_area .navbar .nav .nav-item {
       margin-right: 45px; }
       .header_area .navbar .nav .nav-item .nav-link {
-        font: 500 12px/120px "Roboto", sans-serif;
+        font: 500 12px/120px "Papyrus", fantasy;
         text-transform: uppercase;
-        color: #fff;
+        color: #fbf302;
         padding: 0px;
         display: inline-block; }
         .header_area .navbar .nav .nav-item .nav-link:after {
           display: none; }
       .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
-        color: #fff; }
+        color: #fff;
+        font-size: 18px; }
       .header_area .navbar .nav .nav-item.submenu {
         position: relative; }
         .header_area .navbar .nav .nav-item.submenu ul {
@@ -309,9 +310,9 @@ button:focus {
 .home_banner_area {
   position: relative;
   z-index: 1;
-  background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+  background-image: -moz-linear-gradient(0deg, #20c997 0%, #6f42c1 100%);
+  background-image: -webkit-linear-gradient(0deg, #20c997 0%, #6f42c1 100%);
+  background-image: -ms-linear-gradient(0deg, #20c997 0%, #6f42c1 100%);
   margin-bottom: 200px; }
   .home_banner_area .box_1620 {
     min-height: 700px;
@@ -394,9 +395,9 @@ button:focus {
   position: relative;
   z-index: 1;
   min-height: 350px;
-  background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+  background-image: -moz-linear-gradient(0deg, #20c997 0%, #6f42c1 100%);
+  background-image: -webkit-linear-gradient(0deg, #20c997 0%, #6f42c1 100%);
+  background-image: -ms-linear-gradient(0deg, #20c997 0%, #6f42c1 100%);
   margin-bottom: 120px; }
   .banner_area .box_1620 {
     background: #fff;
@@ -592,7 +593,7 @@ button:focus {
   .blog_details h2 {
     font-size: 24px;
     line-height: 36px;
-    color: #222222;
+    color: #dc3545;
     font-weight: 600;
     transition: all 0.3s linear; }
     .blog_details h2:hover {
@@ -600,7 +601,10 @@ button:focus {
   .blog_details p {
     margin-bottom: 26px;
     font-family: Copperplate, Papyrus, fantasy;
-
+  }
+  .blog_details pre{
+    white-space: pre-wrap;
+    color: #222222;
   }
 
 .view_btn {
@@ -2512,7 +2516,10 @@ h6 {
 .welcome_text p {
   max-width: 495px;
   font-family: "Lucida Console", Monaco, monospace;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  font-size: 13px;
+  font-style: italic;
+  color: #000000; }
 
 .welcome_text_sk h4 {
   color: indianred;
@@ -2919,7 +2926,7 @@ h6 {
       .testimonials_area.testi_two .testi_item:hover {
         background: #fff;
         border-color: #fff;
-        box-shadow: 0px 10px 30px 0px rgba(153, 153, 153, 0.1); }
+        box-shadow: inset -8px 5px 10px 7px rgb(0 0 0 / 20%);}
 
 .testi_inner .col-lg-3 {
   vertical-align: middle;
@@ -2935,14 +2942,21 @@ h6 {
   margin-bottom: 0px; }
 
 .testi_item {
-  border: 1px solid #eeeeee;
+  border: 1px solid #dee2e6;
   border-radius: 10px;
   background: #fff;
   padding: 40px 28px;
   word-wrap: break-word; }
+.testi_item: hover{
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2); 
+  padding: 40px 28px;
+  word-wrap: break-word; }
   .testi_item p {
-    font-family: "Monaco", monospace;
-    font-size: 13px;
+    font-family: "Lucida Console", monospace;
+    font-style: italic;
+    font-size: 11px;
     color: black; }
   .testi_item h4 {
     color: palevioletred;

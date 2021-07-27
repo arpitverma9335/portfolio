@@ -28,6 +28,9 @@
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
         {% endcompress %}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-191535811-2"></script>
         <script>
@@ -95,11 +98,11 @@
                     <div class="col-lg-12">
                         <div class="welcome_text">
                             <h4>About Myself</h4>
-                            <p>{{aimabout.myself}}</p>
+                            <p style="font-family: 'Press Start 2P', cursive;">{{aimabout.myself}}</p>
                         </div>
                         <div class="welcome_text">
                             <h4>My Aim</h4>
-                            <p>{{aimabout.aim}}</p>
+                            <p style="font-family: 'Press Start 2P', cursive;">{{aimabout.aim}}</p>
                         </div>
                     </div>
                     {% endfor %}
@@ -159,7 +162,7 @@
                             <a href="{{pr.link}}" target="_blank" rel="noreferrer">
                                 <div class="testi_item">
                                     <h4>{{pr.about}}</h4>
-                                    <p>{{pr.desc}}</p>
+                                    <p style="font-family: 'Press Start 2P', cursive;">{{pr.desc}}</p>
                                 </div>
                             </a>
                         </div>
@@ -180,10 +183,10 @@
                         {% for ach in achievements %}
                         <div class="item">
                             <a href="{{ach.auth_url}}" target="_blank" rel="noreferrer">
-                                <div class="testi_item">
+                                <div class="testi_item hover">
                                     <h4>{{ach.field}}</h4>
                                     <h5>{{ach.platform}}</h5>
-                                    <p>{{ach.descn}}</p>
+                                    <p style="font-family: 'Press Start 2P', cursive;">{{ach.descn}}</p>
                                 </div>
                             </a>
                         </div>

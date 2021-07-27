@@ -26,7 +26,7 @@ PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'staticfiles/js', 'serviceworke
 SECRET_KEY = os.environ['secret_key_portfolio']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG =False
 ALLOWED_HOSTS = ['127.0.0.1','varpit.herokuapp.com']
 
 
