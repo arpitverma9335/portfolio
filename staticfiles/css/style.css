@@ -317,11 +317,14 @@ button:focus {
   .home_banner_area .box_1620 {
     min-height: 700px;
     border-radius: 300px 50px;
+    border-style: solid;
+    border-color: #495057;
+    border-width: 10px 35px 1px 1px;
     position: relative;
     bottom: -100px;
     background: #343a40;
     padding: 30px;
-    box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3); }
+    box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 1); }
   .home_banner_area .banner_inner {
     position: relative;
     width: 100%;
