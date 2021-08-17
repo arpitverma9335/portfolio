@@ -162,7 +162,8 @@ button:focus {
           display: none; }
       .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
         color: #fff;
-        font-size: 18px; }
+        font-size: 18px;
+        font-weight: 900; }
       .header_area .navbar .nav .nav-item.submenu {
         position: relative; }
         .header_area .navbar .nav .nav-item.submenu ul {
@@ -318,7 +319,7 @@ button:focus {
     min-height: 700px;
     border-radius: 300px 50px;
     border-style: solid;
-    border-color: #495057;
+    border-color: #ffc107;
     border-width: 10px 35px 1px 1px;
     position: relative;
     bottom: -100px;
@@ -339,6 +340,7 @@ button:focus {
         padding-right: 125px; }
         .home_banner_area .banner_inner .banner_content .media .d-flex img{
           border-radius: 300px 50px;
+          border: 4px solid #efff00;
         }
       .home_banner_area .banner_inner .banner_content .media .media-body {
         vertical-align: middle;
@@ -2827,9 +2829,10 @@ h6 {
       color: black;
       font-size: 16px; }
     .personal_text .personal_social li:hover a {
-      background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-      background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-      background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%); }
+      background-image: -moz-linear-gradient(0deg, #6c757d 0%, #343a40 100%);
+      background-image: -webkit-linear-gradient(0deg, #6c757d 0%, #343a40 100%);
+      background-image: -ms-linear-gradient(0deg, #6c757d 0%, #343a40 100%);
+      color: #ffc107; }
 
 /* End Personal Profile Area css
 ============================================================================================ */
