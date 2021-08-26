@@ -316,10 +316,9 @@ button:focus {
   background-image: -ms-linear-gradient(0deg, #20c997 0%, #6f42c1 100%);
   margin-bottom: 200px; }
   .home_banner_area .box_1620 {
-    min-height: 700px;
     border-radius: 300px 50px;
     border-style: solid;
-    border-color: #ffc107;
+    border-color: #6c757d;
     border-width: 10px 35px 1px 1px;
     position: relative;
     bottom: -100px;
@@ -329,7 +328,6 @@ button:focus {
   .home_banner_area .banner_inner {
     position: relative;
     width: 100%;
-    min-height: 700px;
     display: flex; }
     .home_banner_area .banner_inner .banner_content {
       color: #222222;
@@ -340,7 +338,6 @@ button:focus {
         padding-right: 125px; }
         .home_banner_area .banner_inner .banner_content .media .d-flex img{
           border-radius: 300px 50px;
-          border: 4px solid #efff00;
         }
       .home_banner_area .banner_inner .banner_content .media .media-body {
         vertical-align: middle;
