@@ -322,7 +322,7 @@ button:focus {
     border-width: 10px 35px 1px 1px;
     position: relative;
     bottom: -100px;
-    background: #343a40;
+    background: linear-gradient(to left, #00000069, #000000a3, #000000a3, #000);
     padding: 30px;
     box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 1); }
   .home_banner_area .banner_inner {
