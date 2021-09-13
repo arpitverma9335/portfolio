@@ -26,8 +26,8 @@ PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'staticfiles/js', 'serviceworke
 SECRET_KEY = os.environ['secret_key_portfolio']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =False
-ALLOWED_HOSTS = ['127.0.0.1','varpit.herokuapp.com']
+DEBUG = False
+ALLOWED_HOSTS = ['127.0.0.1' , 'varpit.herokuapp.com']
 
 
 # Application definition
@@ -84,9 +84,11 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-if not DEBUG:
+
+if DEBUG is False:
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     SECURE_SSL_REDIRECT = True
+
 
 ROOT_URLCONF = 'portfolio.urls'
 

@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from . import views
+from django.conf.urls import handler404
 
 urlpatterns = [
     path('' , views.index_func),
@@ -12,3 +13,5 @@ urlpatterns = [
     path('contact',views.contacts),
     path('offline',views.offline),
 ]
+
+handler404 = 'personal.views.handler404'
