@@ -17,25 +17,25 @@ self.addEventListener("fetch", event => {
     if (event.request.url === "https://varpit.herokuapp.com/") {
         event.respondWith(
             fetch(event.request).catch(err =>
-                self.cache.open(cache_name).then(cache => cache.match(""))
+                self.cache.open(cache_name).then(cache => cache.match("/"))
             )
         );
     }else if (event.request.url === "https://varpit.herokuapp.com/about") {
         event.respondWith(
             fetch(event.request).catch(err =>
-                self.cache.open(cache_name).then(cache => cache.match("about"))
+                self.cache.open(cache_name).then(cache => cache.match("/about"))
             )
         );
     }else if (event.request.url === "https://varpit.herokuapp.com/contact") {
         event.respondWith(
             fetch(event.request).catch(err =>
-                self.cache.open(cache_name).then(cache => cache.match("contact"))
+                self.cache.open(cache_name).then(cache => cache.match("/contact"))
             )
         );
     }else if (event.request.url === "https://varpit.herokuapp.com/blog") {
         event.respondWith(
             fetch(event.request).catch(err =>
-                self.cache.open(cache_name).then(cache => cache.match("blog"))
+                self.cache.open(cache_name).then(cache => cache.match("/blog"))
             )
         );
     }else {
