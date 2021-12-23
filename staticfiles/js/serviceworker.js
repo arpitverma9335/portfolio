@@ -8,6 +8,8 @@ event.waitUntil(
      '/static/img/arpit_profile.909ee3d5a21b.webP',
      '/static/CACHE/css/output.c78c9cfed031.css',
      '/static/CACHE/js/output.4070f1273341.js',
+     '/static/img/banner/banner-2.a2f6506de9b8.jpg?fc5f1c54e8f5',
+     '/static/img/blog/feature-img1.fe76cd61d447.jpeg2000',
   ]);
   })
 );
